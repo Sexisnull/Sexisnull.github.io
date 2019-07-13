@@ -19,7 +19,7 @@ NickName: 'emmmm'
 webtitle: 'K-sec'
 bio: '双手握住简单的快乐.jpg'
 about: true
-aboutyou: '一个颓废但又胸怀大志的半仙'
+aboutyou: '一个颓废但又胸怀大志的半仙(ಥ _ ಥ)'
 portraits: '/assets/tx.jpg' # your portraits image file path
 
 # SNS
@@ -29,15 +29,15 @@ SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagr
   weixin: '' # 你的微信二维码存放的地址
   qq: '' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
   github: 'https://github.com/Sexisnull/'
-  Codepen: ''
-  weibo: ''
-  instagram: ''
-  Twitter: ''
-  Dribbble: ''
-  Facebook: ''
-  Google: ''
-  zhihu: ''
-  juejin: ''
+  Codepen: 'https://github.com/Sexisnull/heiheihei.html'
+  weibo: 'https://github.com/Sexisnull/heiheihei.html'
+  instagram: 'https://github.com/Sexisnull/heiheihei.html'
+  Twitter: 'https://github.com/Sexisnull/heiheihei.html'
+  Dribbble: 'https://github.com/Sexisnull/heiheihei.html'
+  Facebook: 'https://github.com/Sexisnull/heiheihei.html'
+  Google: 'https://github.com/Sexisnull/heiheihei.html'
+  zhihu: 'https://github.com/Sexisnull/heiheihei.html'
+  juejin: 'https://github.com/Sexisnull/heiheihei.html'
   # twitch: ''
 
 # 分页
