@@ -29,15 +29,15 @@ SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagr
   weixin: '' # 你的微信二维码存放的地址
   qq: '' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
   github: 'https://github.com/Sexisnull/'
-  Codepen: 'https://github.com/Sexisnull/heiheihei.html'
-  weibo: 'https://github.com/Sexisnull/heiheihei.html'
-  instagram: 'https://github.com/Sexisnull/heiheihei.html'
-  Twitter: 'https://github.com/Sexisnull/heiheihei.html'
-  Dribbble: 'https://github.com/Sexisnull/heiheihei.html'
-  Facebook: 'https://github.com/Sexisnull/heiheihei.html'
-  Google: 'https://github.com/Sexisnull/heiheihei.html'
-  zhihu: 'https://github.com/Sexisnull/heiheihei.html'
-  juejin: 'https://github.com/Sexisnull/heiheihei.html'
+  Codepen: 'https://sexisnull.github.io/heiheihei.html'
+  weibo: 'https://sexisnull.github.io/heiheihei.html'
+  instagram: 'https://sexisnull.github.io/heiheihei.html'
+  Twitter: 'https://sexisnull.github.io/heiheihei.html'
+  Dribbble: 'https://sexisnull.github.io/heiheihei.html'
+  Facebook: 'https://sexisnull.github.io/heiheihei.html'
+  Google: 'https://sexisnull.github.io/heiheihei.html'
+  zhihu: 'https://sexisnull.github.io/heiheihei.html'
+  juejin: 'https://sexisnull.github.io/heiheihei.html'
   # twitch: ''
 
 # 分页
