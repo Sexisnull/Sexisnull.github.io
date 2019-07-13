@@ -20,7 +20,7 @@ webtitle: 'K-sec'
 bio: '双手握住简单的快乐.jpg'
 about: true
 aboutyou: '一个颓废但又胸怀大志的半仙'
-portraits: '/assets/tx.png' # your portraits image file path
+portraits: '/assets/tx.jpg' # your portraits image file path
 
 # SNS
 SNS: true
@@ -28,7 +28,7 @@ SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagr
   mail: 'mailto:abc@gmail.com'
   weixin: '' # 你的微信二维码存放的地址
   qq: '' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
-  github: ''
+  github: 'https://github.com/Sexisnull/'
   Codepen: ''
   weibo: ''
   instagram: ''
@@ -38,7 +38,7 @@ SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagr
   Google: ''
   zhihu: ''
   juejin: ''
-  twitch: ''
+  # twitch: ''
 
 # 分页
 paginate: 5
@@ -81,7 +81,7 @@ social-share-items: ['qq', 'wechat', 'weibo', 'twitter', 'facebook']
 
 # 百度统计 在baidu-url里填写自己相关的url代码
 baidu: true
-baidu-url: 'https://hm.baidu.com/hm.js?29789d9122207cc591fd8d1518084a9b'
+baidu-url: '29789d9122207cc591fd8d1518084a9b'
 # 谷歌分析 在google-ID里填写自己在谷歌分析获得的追踪ID
 google: false
 google-ID: ''
