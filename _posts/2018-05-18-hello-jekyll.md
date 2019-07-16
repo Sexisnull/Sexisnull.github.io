@@ -4,7 +4,7 @@ title: 'Hello Jekyll'
 date: 2017-04-18
 author: Jekyll
 color: rgb(255,210,32)
-cover: '../assets/cc.png'
+cover: 'https://i.loli.net/2019/07/16/5d2d9d5e955a259961.png'
 tags: jekyll
 ---
 
