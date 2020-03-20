@@ -11,14 +11,14 @@ nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字
   时间线: '/timeline.html'
   关于博主: '/about.html'
   友情链接: '/friendLink.html'
-  工具导航: '/tools.html'
+  # 工具导航: '/tools.html'
 
 # 博主
 author: true
 name: 'K'
 NickName: 'emmmm'
 webtitle: 'K-sec'
-bio: '双手握住简单的快乐.jpg'
+bio: '双手握住简单的快乐.jpg、愿世界和平'
 about: true
 aboutyou: '一个颓废但又胸怀大志的半仙(ಥ _ ಥ)'
 portraits: '/assets/tx.jpg' # your portraits image file path
