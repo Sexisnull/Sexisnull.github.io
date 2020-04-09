@@ -29,8 +29,9 @@ def index():
 def shrine(shrine): 
     def safe_jinja(s): 
         s = s.replace('(', '').replace(')', '') 
-		blacklist = ['config', 'self'] 
-		return ''.join(["{{% set {}=None %}}".format(c) for c in blacklist]) + s 
+		blacklist = ['config', 'self']
+        #无语了，博客模板生成时，会因为下面的代码影响到布局文件，导致博客出现异常。so，对下面进行了修改。 
+		return ''.join(['{{'%' set {}=None '%' }}'.format(c) for c in blacklist]) + s 
 return flask.render_template_string(safe_jinja(shrine)) 
 
 if __name__ == '__main__': 
