@@ -6,9 +6,8 @@ date:   2020-04-08 18:00:00
 tags: SSTI CTF WEB安全 
 description: 'SSTI CTF WEB安全'
 color: 'RGB(205,85,85)'
-cover: 'https://i.loli.net/2020/04/08/SI4Y9qUnHKrLV3z.jpg'
+cover: 'https://i.loli.net/2020/04/08/SI4Y9qUnHKrLV3z.jpg' 
 ---
-
 
 #### 前言
 闲着刷攻防世界题目的时候遇到一个题目，打开一看可以明显感觉到是服务器模板注入（SSTI），对漏洞原理倒是了解，但是payload构造却难住了，搜索相关资料后做一个记录，加固理解并分享。
@@ -152,6 +151,7 @@ for i in xrange(0,100):
 flask 中内置的的变量函数  
 
 ##### flask 中内置的的变量函数  
+```
 config ：可以从模板中直接访问Flask当前的config对象：{{config.SQLALCHEMY_DATABASE_URL}}
 
 request : 就是flask中代表当前请求的request对象 ， {{request.url}}
@@ -164,7 +164,7 @@ url_for() : url_for会根据传入的路由器函数名，返回该路由的URL�
 
 get_flashed_messages():这个函数会返回之前在flask中通过flask（）传入的消息的列表，flash函数的作用很简单，可以把由Python字符串表示的信息加入一个消息队列中，在使用get_flashed_message()函数取出他们并消费掉
 
-```
+
 {%for message in get_flashed_messages()%}
 {{message}}
 {% endfor %}
