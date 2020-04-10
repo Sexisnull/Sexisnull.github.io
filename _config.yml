@@ -30,15 +30,15 @@ SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagr
   weixin: '' # 你的微信二维码存放的地址
   qq: '' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
   github: 'https://github.com/Sexisnull/'
-  Codepen: 'https://sexisnull.github.io/heiheihei.html'
-  weibo: 'https://sexisnull.github.io/heiheihei.html'
-  instagram: 'https://sexisnull.github.io/heiheihei.html'
+  # Codepen: 'https://sexisnull.github.io/heiheihei.html'
+  # weibo: 'https://sexisnull.github.io/heiheihei.html'
+  # instagram: 'https://sexisnull.github.io/heiheihei.html'
   Twitter: 'https://sexisnull.github.io/heiheihei.html'
-  Dribbble: 'https://sexisnull.github.io/heiheihei.html'
-  Facebook: 'https://sexisnull.github.io/heiheihei.html'
+  # Dribbble: 'https://sexisnull.github.io/heiheihei.html'
+  # Facebook: 'https://sexisnull.github.io/heiheihei.html'
   Google: 'https://sexisnull.github.io/heiheihei.html'
   zhihu: 'https://sexisnull.github.io/heiheihei.html'
-  juejin: 'https://sexisnull.github.io/heiheihei.html'
+  # juejin: 'https://sexisnull.github.io/heiheihei.html'
   # twitch: ''
 
 # 分页
@@ -68,10 +68,10 @@ friends:
 disqus: false
 disqus_url: '' # https://abc.disqus.com/embed.js
 # 来必力评论
-livere: true
+livere: false
 livere_uid: 'MTAyMC8zNDI2OS8xMDgwNg==' # MTAyMC8zNDI2OS8xMDgwNg==
 # Gitment评论 OAuth Application
-Gitment: false
+Gitment: true
 Gitment_owner: ''  # github用户名
 Gitment_repo: ''  # github博客存放的仓库名
 client_id: ''  # 注册 OAuth Application 后获得的 client_id
