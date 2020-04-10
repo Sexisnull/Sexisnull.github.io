@@ -18,9 +18,9 @@ author: true
 name: 'K'
 NickName: 'emmmm'
 webtitle: 'K-sec'
-bio: '双手握住简单的快乐.jpg、愿世界和平'
+bio: '双手握住简单的快乐.jpg | 愿世界和平'
 about: true
-aboutyou: '一个颓废但又胸怀大志的半仙(ಥ _ ಥ)'
+aboutyou: '一个胸怀大志的半仙、国家一级退堂鼓鼓手、国家级白日梦梦想家'
 portraits: '/assets/tx.jpg' # your portraits image file path
 
 # SNS
@@ -53,6 +53,12 @@ footer:
 markdown: kramdown
 kramdown:
   input: GFM
+  syntax_highlighter_opts:
+  span:
+    line_numbers: false
+  block:
+    line_numbers: true
+    start_line: 1
 # 代码高亮 使用rouge
 highlighter: rouge
 # 代码高亮主题使用pygments主题: autumn\ default\ emacs\ friendly\ manni\ murphy\ pastie\ perldoc\ tango 任选一个你喜欢的主题名称填在下面的单引号中
