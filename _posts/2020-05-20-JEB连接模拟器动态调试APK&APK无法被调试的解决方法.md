@@ -1,5 +1,3 @@
-
-
 ---
 layout: post
 title:  "JEB连接模拟器动态调试APK&APK无法被调试的解决方法"
@@ -7,9 +5,10 @@ subtitle: 'JEB连接模拟器动态调试APK&APK无法被调试的解决方法'
 date:   2020-05-20 18:00:00
 tags: android
 description: 'android'
-
 color: 'RGB(0,191,255)'
 ---
+
+
 
 #### 一、连接
 
@@ -65,7 +64,7 @@ cat default.prop
 
 还是0，但是不要纠结这里的值，直接返回JEB附加即可成功连接调试
 
-![image-20200529105930014.png](https://i.loli.net/2020/05/29/d9COy3YZox7p8sF.png)
+![image-20200529105930014.png](https://i.loli.net/2020/08/05/W9PTqcydAmauMfn.png)
 
 #### 三、动态调试
 
