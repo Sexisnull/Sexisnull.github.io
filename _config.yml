@@ -26,7 +26,7 @@ portraits: '/assets/tx.jpg' # your portraits image file path
 # SNS
 SNS: true
 SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen']
-  mail: '1412.kicc@gmail.com'
+  mail: 'mailto:1412.kicc@gmail.com'
   weixin: 'https://a111-1255560786.cos.ap-nanjing.myqcloud.com/e216c430ade7e2f7a9c171cd229e0a6.jpg' # 你的微信二维码存放的地址
   qq: '' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
   github: 'https://github.com/Sexisnull/'
@@ -37,7 +37,7 @@ SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagr
   # Dribbble: 'https://sexisnull.github.io/heiheihei.html'
   # Facebook: 'https://sexisnull.github.io/heiheihei.html'
   # Google: 'https://sexisnull.github.io/heiheihei.html'
-  # zhihu: 'https://sexisnull.github.io/heiheihei.html'
+  zhihu: 'https://sexisnull.github.io/heiheihei.html'
   # juejin: 'https://sexisnull.github.io/heiheihei.html'
   # twitch: ''
 
