@@ -3,7 +3,7 @@ layout: post
 title:  "happycorp：1靶机游玩记录"
 subtitle: 'happycorp：1靶机游玩记录'
 date:   2019-07-22 18:00:00
-tags: 靶机 靶场
+tags: 靶机
 description: '靶机 happycorp'
 color: 'rgb(255,165,0)'
 cover: 'https://i.loli.net/2019/07/22/5d358243eb11081011.png'
@@ -171,6 +171,7 @@ cp passwd /etc/passwd
 4. 利用系统可执行命令提权
 
 通过对NFS的Share/Export进行控制来决定哪一台设备可以访问共享目录防止问题出现
-参考文档：
+
+参考文档：  
 [针对NFS的渗透测试](https://www.freebuf.com/articles/network/159468.html)
 [happycorp_1靶机渗透实战](https://www.anquanke.com/post/id/181786)
