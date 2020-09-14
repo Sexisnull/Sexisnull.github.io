@@ -16,7 +16,8 @@ cover: 'https://a111-1255560786.cos.ap-nanjing.myqcloud.com/blackrose.jpg'
 
 由于国外访问较慢，这里下载后的文件已经传到了网盘
 
-网盘链接：
+网盘链接：https://pan.baidu.com/s/1FGc7RPXnerkcydqN9i86Gw 
+提取码：5whz
 
 PS：下载vulnhub里面的镜像可以使用FDM这款工具，挂到机器上慢慢下。
 
