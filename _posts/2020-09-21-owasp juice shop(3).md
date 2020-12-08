@@ -94,7 +94,7 @@ Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the cli
 
 ![image-20200920105904921](https://a111-1255560786.cos.ap-nanjing.myqcloud.com/image-20200920105904921.png)
 
-![image-20200920110010050](D:\KIDICC资料库\MD图库\owasp juice shop（3）\image-20200920110010050.png)
+![image-20200920110010050](https://a111-1255560786.cos.ap-nanjing.myqcloud.com/image-20200920110010050.png)
 
 直接放到bp的重放模块，然后把对应值给替换掉，载荷就a-z，A-Z，0-9，-_。希望后端数据库命名没有其他特殊字符。。
 
